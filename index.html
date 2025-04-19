@@ -6,6 +6,66 @@
     <title>Guillermo Núñez - Desarrollador Flutter</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" href="./logo-fav-icon-web-v2-redu.png" type="image/png">
+    <!-- Agregar Font Awesome para el ícono de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos para el ícono de WhatsApp */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+        }
+        
+        .whatsapp-icon i {
+            font-size: 32px;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +74,12 @@
                 <img src="./assets/images/logoGindCode.webp" alt="GindCode" class="profile-image">
                 <h1 class="profile-title">GindCode</h1>
                 <p class="subtitle">Desarrollador de Aplicaciones Flutter</p>
+                <!-- Añadir contacto WhatsApp en el header -->
+                <div class="contact-info">
+                    <a href="https://wa.me/584144966798" class="contact-btn whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -26,14 +92,14 @@
                     <img src="./apps/mi_inventario_app/assets/icons/icon.webp" alt="Mi Inventario App Offline Icon" class="app-icon">
                     <div class="app-info">
                         <h3 class="app-name">Mi Inventario App (Offline)</h3>
-                        <small>v1.0.2</small>
+                        <small>v1.0.3</small>
                     </div>
                 </div>
                 <div class="app-desc">
-                    <p>Aplicación diseñada para actualizar precios y tasas de productos fácilmente.</p>
+                    <p>Aplicación diseñada para actualizar precios y tasas de productos fácilmente. Haciendo respaldos locales de los datos</p>
                 </div>
                 <div class="app-actions">
-                    <a href="https://github.com/gu1llermo/gu1llermo.github.io/releases/download/v1.0.2-offline-mi-inventario/v1.0.2_offline_mi-inventario.apk" class="download-btn">
+                    <a href="https://github.com/gu1llermo/gu1llermo.github.io/releases/download/v1.0.3-mi-inventario-offline/v1.0.3-mi-inventario-offline.apk" class="download-btn">
                         <img src="./assets/icons/download-icon.svg" alt="Descargar" class="download-icon">
                         Descargar APK
                     </a>
@@ -69,7 +135,12 @@
             <p class="footer-text">© 2025 GindCode - Desarrollador Flutter</p>
         </div>
     </footer>
-
+    
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/584144966798" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
     <!-- Scripts (si necesitas añadir JavaScript en el futuro) -->
     <script src="./assets/js/main.js"></script>
 </body>
